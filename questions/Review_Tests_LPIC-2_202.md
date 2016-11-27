@@ -124,4 +124,69 @@ zone mydomain.com {
 **allow-transfer {1.2.3.4;};**
 
 
+Select the TWO correct statements about the following excerpt from httpd.conf: 
+<Directory /var/web/dir1>
+    <Files private.html> 
+        Order allow, deny Deny from all
+    </Files>
+</Directory>
+
+**The configuration will deny access to /var/web/dir1/private.html, /var/web/dirl/subdir2/private.html, /var/web/dirl/subdir3/private.html and any other instance of private.html found under the /var/web/dir1/directory.**
+**The configuration will allow access to /var/web/private.html, if it exists**
+
+
+The new file server is a member of the Windows domain “foo”. Which TWO of the following configuration sections will allow members of the domain group “all” to read, write and execute files in “/srv/smb/data”?
+
+**[data] comment = data share path = /srv/smb/data write list = @foo+all force group = @foo+all create mask = 0770 directory mask = 0770**
+**[data] path = /srv/smb/data write list = @foo+all force group = @foo+all create mask = 0770 directory mask = 0770**
+
+
+During which stage of the boot process would this message be seen? Ide0: BM-DMA at 0xff00-0xff07, BIOS settings: hda:DMA, hdb:DMA
+
+**Hardware initialization and setup**
+
+
+During which stage of the boot process would this message be seen? ide_setup:hdc=ide-scsi
+
+**Kernel loading**
+
+
+All machines outside the network are able to send emails through the server to addresses not served by that server. If the server accepts and delivers the email, then it is a(n) ---------------.
+
+**open email relay**
+
+
+What is the name of the dovecot configuration variable that specifies the location of user mail?
+
+**mail_location**
+
+
+What does the following procmail configuration section do? :0fw * < 256000 | /usr/bin/foo
+
+**If the email smaller than 256000 Bytes, procmail will process it with the program foo**
+
+
+You suspect that you are receiving messages with a forged From: address. What could help you find out where the mail is originating?
+
+**Look in the Received: and Message-ID: parts of the mail header**
+
+
+Which environment variables are used by ssh-agent? (Please select TWO variables)
+
+**SSH_AGENT_ID**
+**SSH_AUTH_SOCK**
+
+
+Which files are read by the lsdev command? (Please specify THREE answers)
+
+**/proc/dma**
+**/proc/interrupts**
+**/proc/ioports**
+
+
+Which of the following options can be passed to a DHCP client machine using configuration options on the DHCP server?
+
+**The NIS domain name**
+
+
 
