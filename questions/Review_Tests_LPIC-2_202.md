@@ -190,3 +190,107 @@ Which of the following options can be passed to a DHCP client machine using conf
 
 
 
+Postfix daemons can be chroot’d by setting the chroot flag in -------------. (Supply only the filename, without a path)
+
+**master.cf**
+
+
+Which Squid configuration directive defines the authentication method to use?
+
+**auth_param**
+
+
+Which entry in the .procmailrc file will send a copy of an email to another mail address?
+
+**:0 c**
+
+
+What is the default location for sendmail configuration files? (Please provide the complete path to the directory)
+
+**/etc/mail**
+
+
+In which directory can all parameters available to sysctl be found? (Provide the full path)
+
+**/proc/sys**
+
+
+Instead of running the command echo 1 >/proc/sys/net/ipv4/ip_forward, the configuration setting is going to be added to /etc/sysctl.conf. What is the missing value in the configuration line below? (Please specify only the missing value)
+
+**bet.ipv4.ip_forward**
+
+
+Which of the following sentences is true about ISC DHCP?
+
+**It can be configured to only assign addresses to known clients.**
+
+
+The host, called ” Certkiller “, with the MAC address “08:00:2b:4c:59:23”, should always be given the IP address of 192.168.1.2 by the DHCP server. Which of the following configurations will achieve this?
+
+**host Certkiller { hardware ethernet 08:00:2b:4c:59:23; fixed-address 192.168.1.2; }**
+
+
+DNSSEC is used for?
+
+**Cryptographic authentication of DNS zones.**
+
+
+To securely use dynamic DNS updates, the use of TSIG is recommended. Which TWO statements about TSIG are true?
+
+**TSIG is used only in server configuration**
+**Servers using TSIG must be in sync (time zone!)**
+
+
+There is a restricted area in an Apache site, which requires users to authenticate against the file /srv/ www/security/site-passwd. Which command is used to CHANGE the password of existing users, without losing data, when Basic authentication is being used.
+
+
+A web server is expected to handle approximately 200 simultaneous requests during normal
+use with an occasional spike in activity and is performing slowly. Which directives in
+httpd.conf need to be adjusted?
+
+**MinSpareServers, MaxSpareServers, StartServers & MaxClients.**
+
+
+When Apache is configured to use name-based virtual hosts:
+
+**it’s also necessary to create a VirtualHost block for the main host.**
+
+
+Which ACL type in Squid’s configuration file is used for authentication purposes?
+
+**proxy_auth**
+
+
+In the file /var/squid/url_blacklist is a list of URLs that users should not be allowed to access. What is the correct entry in Squid’s configuration file to create an acl named blacklist based on this file?
+
+**acl blacklist urlpath_regex “/var/squid/url_blacklist”**
+
+
+Users in the acl named ‘sales_net’ must only be allowed to access to the Internet at times specified in the time_acl named ‘sales_time’. Which is the correct http_access directive, to configure this?
+
+**http_access allow sales_net sales_time**
+
+
+What of the following is NOT a valid ACL type, when configuring squid?
+
+**source**
+
+
+The command ------------- -x foo will delete the user foo from the Samba database. (Specify the command only, no path information.)
+
+**smbpasswd**
+
+
+The Internet gateway connects the clients with the Internet by using a Squid proxy. Only the clients from the network 192.168.1.0/24 should be able to use the proxy. Which of the following configuration sections is correct?
+
+**acl local src 192.168.1.0/24 http_access allow local**
+
+
+The following is an excerpt from a procmail configuration file: :0 c * ! ^To: backup ! backup Which of the following is correct?
+
+**A copy of all mails will be send to the local email address backup.**
+
+
+What postfix configuration setting defines the domains for which Postfix will deliver mail locally? (Please provide only the configuration setting name with no other information)
+
+**mydomain**
